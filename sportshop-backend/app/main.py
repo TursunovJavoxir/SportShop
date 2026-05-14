@@ -16,6 +16,7 @@ from app.models.order import Order, OrderItem
 app = FastAPI()
 
 # ✅ CORS
+# ✅ CORS
 origins = [
     "*"
 ]
