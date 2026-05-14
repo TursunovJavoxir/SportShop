@@ -13,7 +13,7 @@ function OrdersPage({ token }) {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8001/orders",
+        "https://sportshop-e3ew.onrender.com/orders",
         {
           headers: {
             Authorization: `Bearer ${token}`

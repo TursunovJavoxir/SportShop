@@ -14,7 +14,7 @@ function Home({ darkMode }) {
   // загрузка товаров
   useEffect(() => {
 
-    fetch("http://127.0.0.1:8001/products")
+    fetch("https://sportshop-e3ew.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
 
@@ -33,7 +33,7 @@ function Home({ darkMode }) {
     }
 
     const res = await fetch(
-      `http://127.0.0.1:8001/cart/add/${productId}`,
+      `https://sportshop-e3ew.onrender.com/cart/add/${productId}`,
       {
         method: "POST",
 

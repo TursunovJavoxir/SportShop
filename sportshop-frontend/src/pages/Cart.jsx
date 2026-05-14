@@ -6,7 +6,7 @@ function Cart() {
   const token = localStorage.getItem("token");
 
   const loadCart = async () => {
-    const res = await fetch("http://127.0.0.1:8001/cart", {
+    const res = await fetch("https://sportshop-e3ew.onrender.com/cart", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -22,7 +22,7 @@ function Cart() {
 
   const removeFromCart = async (productId) => {
     await fetch(
-      `http://127.0.0.1:8001/cart/remove/${productId}`,
+      `https://sportshop-e3ew.onrender.com/cart/remove/${productId}`,
       {
         method: "DELETE",
         headers: {
@@ -36,7 +36,7 @@ function Cart() {
 
   const createOrder = async () => {
     const res = await fetch(
-      "http://127.0.0.1:8001/orders/create",
+      "https://sportshop-e3ew.onrender.com/orders/create",
       {
         method: "POST",
         headers: {

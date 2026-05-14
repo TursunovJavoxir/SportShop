@@ -13,7 +13,7 @@ function Cart({ token }) {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8001/cart",
+        "https://sportshop-e3ew.onrender.com/cart",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ function Cart({ token }) {
     try {
 
       await axios.delete(
-        `http://127.0.0.1:8001/cart/remove/${productId}`,
+        `https://sportshop-e3ew.onrender.com/cart/remove/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -55,7 +55,7 @@ function Cart({ token }) {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8001/orders/create",
+        "https://sportshop-e3ew.onrender.com/orders/create",
         {},
         {
           headers: {

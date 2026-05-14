@@ -12,7 +12,7 @@ function Register() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8001/register",
+        "https://sportshop-e3ew.onrender.com/register",
         {
           email,
           password

@@ -1,0 +1,104 @@
+# Query: http://127.0.0.1:8001
+# ContextLines: 1
+
+Результаты: 22 - Файлы 12
+
+sportshop-frontend\src\Cart.jsx:
+  15        const response = await axios.get(
+  16:         "https://sportshop-e3ew.onrender.com/cart",
+  17          {
+
+  36        await axios.delete(
+  37:         `https://sportshop-e3ew.onrender.com/cart/remove/${productId}`,
+  38          {
+
+  57        await axios.post(
+  58:         "https://sportshop-e3ew.onrender.com/orders/create",
+  59          {},
+
+sportshop-frontend\src\Login.jsx:
+  19        const response = await axios.post(
+  20:         "https://sportshop-e3ew.onrender.com/login",
+  21          formData
+
+sportshop-frontend\src\Register.jsx:
+  14        await axios.post(
+  15:         "https://sportshop-e3ew.onrender.com/register",
+  16          {
+
+sportshop-frontend\src\pages\Admin.jsx:
+  17      const res = await fetch(
+  18:       "https://sportshop-e3ew.onrender.com/products"
+  19      );
+
+  33      const res = await fetch(
+  34:       "https://sportshop-e3ew.onrender.com/products",
+  35        {
+
+  73      const res = await fetch(
+  74:       `https://sportshop-e3ew.onrender.com/products/${id}`,
+  75        {
+
+sportshop-frontend\src\pages\Cart.jsx:
+   8    const loadCart = async () => {
+   9:     const res = await fetch("https://sportshop-e3ew.onrender.com/cart", {
+  10        headers: {
+
+  24      await fetch(
+  25:       `https://sportshop-e3ew.onrender.com/cart/remove/${productId}`,
+  26        {
+
+  38      const res = await fetch(
+  39:       "https://sportshop-e3ew.onrender.com/orders/create",
+  40        {
+
+sportshop-frontend\src\pages\CartPage.jsx:
+  15        const response = await axios.get(
+  16:         "https://sportshop-e3ew.onrender.com/cart",
+  17          {
+
+  36        await axios.delete(
+  37:         `https://sportshop-e3ew.onrender.com/cart/remove/${productId}`,
+  38          {
+
+  57        await axios.post(
+  58:         "https://sportshop-e3ew.onrender.com/orders/create",
+  59          {},
+
+sportshop-frontend\src\pages\Home.jsx:
+  16  
+  17:     fetch("https://sportshop-e3ew.onrender.com/products")
+  18        .then((res) => res.json())
+
+  35      const res = await fetch(
+  36:       `https://sportshop-e3ew.onrender.com/cart/add/${productId}`,
+  37        {
+
+sportshop-frontend\src\pages\Login.jsx:
+  13      const res = await fetch(
+  14:       "https://sportshop-e3ew.onrender.com/login",
+  15        {
+
+sportshop-frontend\src\pages\LoginPage.jsx:
+  18        const response = await axios.post(
+  19:         "https://sportshop-e3ew.onrender.com/login",
+  20          formData
+
+sportshop-frontend\src\pages\OrdersPage.jsx:
+  15        const response = await axios.get(
+  16:         "https://sportshop-e3ew.onrender.com/orders",
+  17          {
+
+sportshop-frontend\src\pages\ProductPage.jsx:
+  14      fetch(
+  15:       `https://sportshop-e3ew.onrender.com/products/${id}`
+  16      )
+
+  34      const res = await fetch(
+  35:       `https://sportshop-e3ew.onrender.com/cart/add/${id}`,
+  36        {
+
+sportshop-frontend\src\pages\RegisterPage.jsx:
+  13        await axios.post(
+  14:         "https://sportshop-e3ew.onrender.com/register",
+  15          {

@@ -12,7 +12,7 @@ function ProductPage({ darkMode }) {
   useEffect(() => {
 
     fetch(
-      `http://127.0.0.1:8001/products/${id}`
+      `https://sportshop-e3ew.onrender.com/products/${id}`
     )
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -32,7 +32,7 @@ function ProductPage({ darkMode }) {
     }
 
     const res = await fetch(
-      `http://127.0.0.1:8001/cart/add/${id}`,
+      `https://sportshop-e3ew.onrender.com/cart/add/${id}`,
       {
         method: "POST",
 

@@ -15,7 +15,7 @@ function Admin() {
   const loadProducts = async () => {
 
     const res = await fetch(
-      "http://127.0.0.1:8001/products"
+      "https://sportshop-e3ew.onrender.com/products"
     );
 
     const data = await res.json();
@@ -31,7 +31,7 @@ function Admin() {
   const addProduct = async () => {
 
     const res = await fetch(
-      "http://127.0.0.1:8001/products",
+      "https://sportshop-e3ew.onrender.com/products",
       {
         method: "POST",
 
@@ -71,7 +71,7 @@ function Admin() {
   const deleteProduct = async (id) => {
 
     const res = await fetch(
-      `http://127.0.0.1:8001/products/${id}`,
+      `https://sportshop-e3ew.onrender.com/products/${id}`,
       {
         method: "DELETE",
 
